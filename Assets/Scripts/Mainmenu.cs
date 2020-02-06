@@ -1,0 +1,24 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class Mainmenu : MonoBehaviour
+{
+    public void scenechange(string scenename)
+    {
+        FindObjectOfType<AudioManager>().Play("Click");
+        SceneManager.LoadScene(scenename);
+    }
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
